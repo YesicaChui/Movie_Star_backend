@@ -19,7 +19,7 @@ app.post('/api/miOpenAI', async (req, res) => {
 })
 
 app.get('/test',(req,res)=>{
-  res.send({data:'Servidor Movie Star funcionando'})
+  res.send({data:'Servidor Movie Star funcionando ahora'})
 })
 
 
