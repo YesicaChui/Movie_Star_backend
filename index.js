@@ -18,6 +18,10 @@ app.post('/api/miOpenAI', async (req, res) => {
   res.send({ data: respuesta })
 })
 
+app.get('/test',(req,res)=>{
+  res.send({data:'Servidor Movie Star funcionando'})
+})
+
 
 function crearPrompt(pregunta) {
   return `
@@ -55,4 +59,4 @@ async function llamarAchatGpt(mensage) {
   return data.choices[0].message.content
 }
 
-app.listen(3003, () => { console.log("sevidor iniciado") })
+app.listen(3100, () => { console.log("sevidor iniciado") })
