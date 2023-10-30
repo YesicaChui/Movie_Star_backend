@@ -60,4 +60,4 @@ async function llamarAchatGpt(mensage) {
   return data.choices[0].message.content
 }
 
-app.listen(3100, () => { console.log("sevidor iniciado") })
+app.listen(3003, () => { console.log("sevidor iniciado") })
